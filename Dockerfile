@@ -14,6 +14,8 @@ COPY privkey.pem /opt/beef/
 
 COPY config.yaml /opt/beef/config.yaml
 
+RUN cp /opt/beef/arerules/record_snapshots.json /opt/beef/arerules/enabled/
+
 EXPOSE 3000 6789 61985 61986
 
 COPY entrypoint.sh /tmp/entrypoint.sh
@@ -21,5 +23,3 @@ COPY entrypoint.sh /tmp/entrypoint.sh
 RUN chmod +x /tmp/entrypoint.sh
 
 ENTRYPOINT ["/tmp/entrypoint.sh"]
-
-
