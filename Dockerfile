@@ -14,7 +14,7 @@ COPY privkey.pem /opt/beef/
 
 COPY config.yaml /opt/beef/config.yaml
 
-RUN cp /opt/beef/arerules/record_snapshots.json /opt/beef/arerules/enabled/
+COPY autorun.json /opt/beef/arerules/enabled/
 
 EXPOSE 3000 6789 61985 61986
 
