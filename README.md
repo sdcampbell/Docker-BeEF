@@ -1,6 +1,9 @@
 # Docker-BeEF
 BeEF customized for your domain name and TLS cert, running in Docker.
 
+## Why?
+I like to sandbox pentest tools using Docker to keep my testing environment clean and add aliases to run my Docker images for ease of use. I've tried other BeEF docker images but had issues when I tried to customize them. I wanted to make it easy for others to run BeEF on any system that can run Docker. I configured it to autorun modules that make it useful for capturing admin users when hooked by blind XSS on backend administrative interfaces and getting a screenshot of the page where they were hooked.
+
 ## Installation:
 
 `git clone https://github.com/MooseDojo/Docker-BeEF.git`
